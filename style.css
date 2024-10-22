@@ -20,10 +20,22 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.banners {
+    cursor: pointer; /* Adiciona o cursor pointer ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado padrão */
+  }
+  
+  .banners:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration-color: black; /* Define a cor do sublinhado como preto */
+  }
+  
 .menu {
     display: flex;
     gap: 5vh;
     margin-top: 4vh;
+    height: 50px;
+    transform: translateX(-20px);
 }
 
 .menu li {
