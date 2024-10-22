@@ -215,12 +215,11 @@ button:hover {
     background: rgba(196, 196, 196, 1);
     color: rgb(255, 0, 0);
     font-size:bold;
-    
     text-align: end;
 }
 
 footer {
-    background-color: #333; 
+    background-color: #1f2937;    
     color: white; 
     padding: 30px; 
     
