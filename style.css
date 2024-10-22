@@ -20,14 +20,36 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.logo-container {
+    text-align: left; 
+    margin-right: auto; 
+    font-size:10px;
+    color: rgb(51, 34, 34);
+    font-family: 'Times New Roman', serif;
+}
+
+
+.menu {
+    list-style: none; 
+    padding: 0; 
+}
+
 .banners {
-    cursor: pointer; /* Adiciona o cursor pointer ao passar o mouse */
-    text-decoration: none; /* Remove sublinhado padrão */
+    display: inline; 
+    margin: 0 10px; 
+}
+
+
+
+
+.banners {
+    cursor: pointer; 
+    text-decoration: none; 
   }
   
   .banners:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-    text-decoration-color: black; /* Define a cor do sublinhado como preto */
+    text-decoration: underline; 
+    text-decoration-color: black; 
   }
   
 .menu {
