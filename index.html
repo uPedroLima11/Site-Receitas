@@ -1,123 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruta & Fruto</title>
-    <link rel="icon" href="imagens/flavicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="pt-BR">
 
-  <body>
-    <header class="cabecalho">
-      <div class="logo-container">
-      <img src="logo.jpg" alt="logo" />
-      <h1>Sabor e Saúde</h1></div>
-      <div>
-        <ul class="menu">
-          <li class="banners"><a href=""></a>inicio</li>
-          <li class="banners"><a href=""></a>receitas</li>
-          <li class="banners"><a href=""></a>quem somos</li>
-        </ul>
-      </div>
-    </header>
-    <div class="container">
-      <h1 class="titulo1">Reaproveite melhor os alimentos</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas Deliciosas</title>
+  <link href="output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-white">
+
+  <header class="bg-gray-800 text-white p-5 flex justify-between items-center">
+    <div class="text-left text-xs text-gray-800 font-serif flex items-center gap-4">
+      <img src="/imagens/logo.png" alt="Logo" class="w-12 h-12">
+      <h1 class="text-white font-semibold text-lg">Sabor e Saúde</h1>
     </div>
-    <div class="inicio">
-      <h1 class="titulo">Receitas para economizar e ganhar saúde</h1>
-      <h2 class="subtitulo">
-        Nossas receitas ajudam você a aproveitar melhor os alimentos,
-        economizar, ganhar tempo e praticidade
-      </h2>
+    <nav class="hidden md:flex space-x-4">
+      <a href="#" class="hover:text-gray-400">Home</a>
+      <a href="#" class="hover:text-gray-400">Sobre</a>
+      <a href="#" class="hover:text-gray-400">Serviços</a>
+      <a href="#" class="hover:text-gray-400">Contato</a>
+    </nav>
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </header>
+  
+  <div id="dropdown-menu" class="hidden md:hidden bg-gray-800 text-white p-4 absolute top-16 right-0 w-48">
+    <a href="#" class="block hover:text-gray-400">Home</a>
+    <a href="#" class="block hover:text-gray-400">Sobre</a>
+    <a href="#" class="block hover:text-gray-400">Serviços</a>
+    <a href="#" class="block hover:text-gray-400">Contato</a>
+  </div>
+  
+
+  <div class="bg-cover bg-center h-96" style="background-image: url('/imagens/banner.jpg');">
+    <h2 class="text-white text-4xl sm:text-6xl font-pacifico text-center shadow-lg pt-32">Reaproveite Melhor os Alimentos</h2>
+  </div>
+
+  <div class="bg-[#f4fcfc] flex flex-col items-center justify-center py-10 px-4">
+    <h3 class="text-red-800 text-3xl sm:text-6xl font-pacifico text-center">Receitas para economizar e ganhar saúde</h3>
+    <p class="text-[#8C8888] font-extrabold text-lg sm:text-2xl mt-6 text-center">
+      Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade.
+    </p>
+  </div>
+
+  <main class="bg-[#d6d6d6] flex flex-col items-center justify-center py-10 px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-24 mt-10">
+      <div class="bg-blue-50 shadow-lg rounded-lg flex flex-col max-w-xs">
+        <img src="/imagens/beterrabas-assadas.jpg" alt="Receita 1" class="w-full h-48 rounded-t-lg">
+        <div class="p-4">
+          <h4 class="text-xl sm:text-3xl font-semibold">Beterrabas Assadas</h4>
+          <p class="font-poppins text-[#4f4d4d]">Receita cheia de vitaminas para o café da manhã.</p>
+          <button class="bg-red-500 text-white rounded-xl p-2 mt-2 hover:scale-105">Ver Receita</button>
+        </div>
+      </div>
+      <div class="bg-blue-50 shadow-lg rounded-lg flex flex-col max-w-xs">
+        <img src="/imagens/mix-de-vegetais.jpg" alt="Receita 2" class="w-full h-48 rounded-t-lg">
+        <div class="p-4">
+          <h4 class="text-xl sm:text-3xl font-semibold">Mix de Vegetais</h4>
+          <p class="font-poppins text-[#4f4d4d]">Um prato leve e nutritivo para o dia a dia.</p>
+          <button class="bg-red-500 text-white rounded-xl p-2 mt-2 hover:scale-105">Ver Receita</button>
+        </div>
+      </div>
+      <div class="bg-blue-50 shadow-lg rounded-lg flex flex-col max-w-xs">
+        <img src="/imagens/pimentoes-a-juliana.jpg" alt="Receita 3" class="w-full h-48 rounded-t-lg">
+        <div class="p-4">
+          <h4 class="text-xl sm:text-3xl font-semibold">Pimentões à Juliana</h4>
+          <p class="font-poppins text-[#4f4d4d]">Coloridos e saborosos para seu almoço.</p>
+          <button class="bg-red-500 text-white rounded-xl p-2 mt-2 hover:scale-105">Ver Receita</button>
+        </div>
+      </div>
+      <div class="bg-blue-50 shadow-lg rounded-lg flex flex-col max-w-xs">
+        <img src="/imagens/prato-oriental.jpg" alt="Receita 4" class="w-full h-48 rounded-t-lg">
+        <div class="p-4">
+          <h4 class="text-xl sm:text-3xl font-semibold">Prato Oriental</h4>
+          <p class="font-poppins text-[#4f4d4d]">Sabores asiáticos em sua cozinha.</p>
+          <button class="bg-red-500 text-white rounded-xl p-2 mt-2 hover:scale-105">Ver Receita</button>
+        </div>
+      </div>
+      <div class="bg-blue-50 shadow-lg rounded-lg flex flex-col max-w-xs">
+        <img src="/imagens/salada-de-kiwi.jpg" alt="Receita 5" class="w-full h-48 rounded-t-lg">
+        <div class="p-4">
+          <h4 class="text-xl sm:text-3xl font-semibold">Salada de Kiwi</h4>
+          <p class="font-poppins text-[#4f4d4d]">Refrescante e cheia de vitaminas.</p>
+          <button class="bg-red-500 text-white rounded-xl p-2 mt-2 hover:scale-105">Ver Receita</button>
+        </div>
+      </div>
+      <div class="bg-blue-50 shadow-lg rounded-lg flex flex-col max-w-xs">
+        <img src="/imagens/tigela-de-abacate.jpg" alt="Receita 6" class="w-full h-48 rounded-t-lg">
+        <div class="p-4">
+          <h4 class="text-xl sm:text-3xl font-semibold">Tigela de Abacate</h4>
+          <p class="font-poppins text-[#4f4d4d]">Deliciosa e saudável para o café da manhã.</p>
+          <button class="bg-red-500 text-white rounded-xl p-2 mt-2 hover:scale-105">Ver Receita</button>
+        </div>
+      </div>
     </div>
-    <main class="receitas">
-      <div>
-        <img src="imagens/tigela-de-abacate.jpg" alt="" class="imagemReceita" />
-        <h2 class="NomeReceita">Tigela de abacate</h2>
-        <h3 class="DescricaoReceita">
-          Receita refrescante e cheia de vitaminas para seu café da manhã.
-        </h3>
-        <button class="botao">Ver Receita</button>
-      </div>
-      <div>
-        <img src="imagens/salada-de-kiwi.jpg" alt="" class="imagemReceita" />
-        <h2 class="NomeReceita">Salada de kiwi</h2>
-        <h3 class="DescricaoReceita">
-          Receita refrescante e cheia de vitaminas para seu café da manhã.
-        </h3>
-        <button class="botao">Ver Receita</button>
-      </div>
-      <div>
-        <img src="imagens/mix-de-vegetais.jpg" alt="" class="imagemReceita" />
-        <h2 class="NomeReceita">Mix de vegetais</h2>
-        <h3 class="DescricaoReceita">
-          Receita refrescante e cheia de vitaminas para seu café da manhã.
-        </h3>
-        <button class="botao">Ver Receita</button>
-      </div>
-      <div>
-        <img
-          src="imagens/pimentoes-a-juliana.jpg"
-          alt=""
-          class="imagemReceita"
-        />
-        <h2 class="NomeReceita">Pimentões à Juliana</h2>
-        <h3 class="DescricaoReceita">
-          Receita refrescante e cheia de vitaminas para seu café da manhã.
-        </h3>
-        <button class="botao">Ver Receita</button>
-      </div>
-      <div>
-        <img src="imagens/prato-oriental.jpg" alt="" class="imagemReceita" />
-        <h2 class="NomeReceita">Prato oriental</h2>
-        <h3 class="DescricaoReceita">
-          Receita refrescante e cheia de vitaminas para seu café da manhã.
-        </h3>
-        <button class="botao">Ver Receita</button>
-      </div>
-      <div>
-        <img
-          src="imagens/beterrabas-assadas.jpg"
-          alt=""
-          class="imagemReceita"
-        />
-        <h2 class="NomeReceita">Beterrabas assadas</h2>
-        <h3 class="DescricaoReceita">
-          Receita refrescante e cheia de vitaminas para seu café da manhã.
-        </h3>
-        <button class="botao">Ver Receita</button>
-      </div>
-    </main>
+  </main>
 
-    <div class="QuemSomos">
-      <h1 class="titulo">Quem somos</h1>
-      <h2 class="subtitulo">Conheça a comunidade por trás da iniciativa</h2>
+  <div class="bg-[#F0F8FF] p-20 flex flex-col items-center gap-8 shadow-[0px_-27px_37px_3px_rgba(0,0,0,0.1)]">
+    <h1 class="text-center text-red-800 text-6xl font-courgette">Quem somos</h1>
+    <h2 class="text-center text-2xl font-bold text-[#8C8888]">Conheça a comunidade por trás da iniciativa</h2>
+  </div>
+  
+  <section class="bg-[#F0F8FF] flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-0 px-8">
+    <div class="flex flex-col items-center mt-[10vh] mb-[10vh] h-[50vh] w-[50vh]">
+      <img class="rounded-full w-[80%] h-[80%]" src="imagens/roberta.jpg" alt="Roberta" />
+      <h1 class="text-[4.5vh] text-[#8D0606] font-courgette">Roberta</h1>
+      <h3 class="text-[#8C8888] text-[2.5vh] font-extrabold">Conteúdo</h3>
     </div>
-
-    <section class="perfil">
-      <div>
-        <img class="imgPerfil" src="imagens/roberta.jpg" alt="" />
-        <h1 class="NomePerfil">Roberta</h1>
-        <h3 class="proficao">Conteudo</h3>
-      </div>
-
-      <div>
-        <img class="imgPerfil" src="imagens/marcela.jpg" alt="" />
-        <h1 class="NomePerfil">Marcela</h1>
-        <h3 class="proficao">Chef de cozinha</h3>
-      </div>
-
-      <div>
-        <img class="imgPerfil" src="imagens/andreia.jpg" alt="" />
-        <h1 class="NomePerfil">Andreia</h1>
-        <h3 class="proficao">Pequena produtora</h3>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-content">
-        <p>&copy; Copyright © 2024 by Pedro Mendes Lima</p>
-      </div>
-    </footer>
+  
+    <div class="flex flex-col items-center mt-[10vh] mb-[10vh] h-[50vh] w-[50vh]">
+      <img class="rounded-full w-[80%] h-[80%]" src="imagens/marcela.jpg" alt="Marcela" />
+      <h1 class="text-[4.5vh] text-[#8D0606] font-courgette">Marcela</h1>
+      <h3 class="text-[#8C8888] text-[2.5vh] font-extrabold">Chef de cozinha</h3>
+    </div>
+  
+    <div class="flex flex-col items-center mt-[10vh] mb-[10vh] h-[50vh] w-[50vh]">
+      <img class="rounded-full w-[80%] h-[80%]" src="imagens/andreia.jpg" alt="Andreia" />
+      <h1 class="text-[4.5vh] text-[#8D0606] font-courgette">Andreia</h1>
+      <h3 class="text-[#8C8888] text-[2.5vh] font-extrabold">Pequena produtora</h3>
+    </div>
+  </section>
+  
+  <footer class="bg-gray-800 text-white p-10 text-center">
+    <p>&copy; 2024 Pedro Mendes Lima. Todos os direitos reservados.</p>
+  </footer>
+  
   </body>
-</html>
+  </html>
+  
