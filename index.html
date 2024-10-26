@@ -9,9 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-white">
@@ -33,17 +31,29 @@
       </svg>
     </button>
   </header>
-  
+
   <div id="dropdown-menu" class="hidden md:hidden bg-gray-800 text-white p-4 absolute top-16 right-0 w-48">
     <a href="#" class="block hover:text-gray-400">Home</a>
     <a href="#" class="block hover:text-gray-400">Sobre</a>
     <a href="#" class="block hover:text-gray-400">Serviços</a>
     <a href="#" class="block hover:text-gray-400">Contato</a>
   </div>
-  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById("menu-toggle");
+      const dropdownMenu = document.getElementById("dropdown-menu");
+
+      menuToggle.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("hidden");
+      });
+    });
+  </script>
+
 
   <div class="bg-cover bg-center h-96" style="background-image: url('/imagens/banner.jpg');">
-    <h2 class="text-white text-4xl sm:text-6xl font-pacifico text-center shadow-lg pt-32">Reaproveite Melhor os Alimentos</h2>
+    <h2 class="text-white text-4xl sm:text-6xl font-pacifico text-center shadow-lg pt-32">Reaproveite Melhor os
+      Alimentos</h2>
   </div>
 
   <div class="bg-[#f4fcfc] flex flex-col items-center justify-center py-10 px-4">
@@ -110,31 +120,31 @@
     <h1 class="text-center text-red-800 text-6xl font-courgette">Quem somos</h1>
     <h2 class="text-center text-2xl font-bold text-[#8C8888]">Conheça a comunidade por trás da iniciativa</h2>
   </div>
-  
+
   <section class="bg-[#F0F8FF] flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-0 px-8">
     <div class="flex flex-col items-center mt-[10vh] mb-[10vh] h-[50vh] w-[50vh]">
       <img class="rounded-full w-[80%] h-[80%]" src="imagens/roberta.jpg" alt="Roberta" />
       <h1 class="text-[4.5vh] text-[#8D0606] font-courgette">Roberta</h1>
       <h3 class="text-[#8C8888] text-[2.5vh] font-extrabold">Conteúdo</h3>
     </div>
-  
+
     <div class="flex flex-col items-center mt-[10vh] mb-[10vh] h-[50vh] w-[50vh]">
       <img class="rounded-full w-[80%] h-[80%]" src="imagens/marcela.jpg" alt="Marcela" />
       <h1 class="text-[4.5vh] text-[#8D0606] font-courgette">Marcela</h1>
       <h3 class="text-[#8C8888] text-[2.5vh] font-extrabold">Chef de cozinha</h3>
     </div>
-  
+
     <div class="flex flex-col items-center mt-[10vh] mb-[10vh] h-[50vh] w-[50vh]">
       <img class="rounded-full w-[80%] h-[80%]" src="imagens/andreia.jpg" alt="Andreia" />
       <h1 class="text-[4.5vh] text-[#8D0606] font-courgette">Andreia</h1>
       <h3 class="text-[#8C8888] text-[2.5vh] font-extrabold">Pequena produtora</h3>
     </div>
   </section>
-  
+
   <footer class="bg-gray-800 text-white p-10 text-center">
     <p>&copy; 2024 Pedro Mendes Lima. Todos os direitos reservados.</p>
   </footer>
-  
-  </body>
-  </html>
-  
+
+</body>
+
+</html>
